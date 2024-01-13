@@ -226,11 +226,46 @@ import args
 # name = "Petya"
 # print(name)
 
-# message = "ask him to cook 12 pancakes"
-# print(message)
-# i = number
-# for i in range(message):
-#         print(number)
+#срезы або slices (це можливість получить подстрочку с индекса 1 по индекс 2)
+
+# sentence = "Hello, world"
+# print(sentence[:])
+# print(sentence[0:])
+# print(sentence[2:])
+# print(sentence[2:8])
+# print(sentence[1:10:2])
+# print(sentence[::-1])
+# print(sentence[10:1:-1])
+#
+# print()
+# name = "Vasya"
+# surname = "Petrov"
+# age = 33
+# fullname = name + " " + surname + " " + str(age)
+# print(fullname)
+#
+# #коли текст\рядок потрібно паписати кілька разів
+# text = "Hello, world" * 3
+# print(text)
+#
+# #коли треба поставити розділювач у тексті
+# print("---" * 10)
+#
+# #для порівняння рідків (тут буде враховуватись сума букв у рядку з таблиці ASCII Table)
+#
+# a1 = "abc"
+# a2 = "abs"
+#
+# if a1 > a2:
+#     print(a1)
+# else:
+#     print(a2)
+#
+# #якщо треба отримати код або перевести цифру у символ у ASCII Table
+#
+# print(ord("A"))
+# print(chr(98))
+
 
 #Task_1:
 message = "Mr.Tom takes bus123"
@@ -241,9 +276,10 @@ for i in message:
         alpha+=1
 print("Number of digits", len(message)-alpha)
 print("Number of letters", alpha)
-
-########
-
+#
+# ########
+#
+print()
 message = "highway666"
 print(message)
 
@@ -265,5 +301,123 @@ print("Total numbers: ", total_digits)
 
 #################
 
+# #Task2
+#
+message = "My friend is fine, but fine is fine for him"
+print(message)
+
+result = message.count("fine")
+print(result)
+#
+# ##
+#
+message = "Why I see 111, while you see 1122 instead"
+print(message)
+
+result = message.count("1")
+
+print(result)
+
+####
+
+#Task3
+#вивести з клавіатури рядок, слово для пошуку, слово для заміни.
+# Зробіть у рядку заміну одного слова на інше
+
+print()
+text = 'summer is hot, summer is sunny'
+result = text.replace('summer', 'winter')
+print(result)
+
+print()
 
 
+#Task4
+
+sentence = "Welcome to San Francisco!"
+print(sentence[:])
+# # #виведіть третій символ цього рядка
+# # print(sentence[0:])
+print(sentence[2])
+#
+# #виведіть передостанній символ цього рядка
+print(sentence[-2])
+# #
+# #виведіть перші п'ять символів цього рядка
+print(sentence[0:6])
+# #
+# #виведіть весь рядок, крім двох останніх символів
+print(sentence[:-2])
+#
+# #виведіть усі символи з парними індексами (вважаючи, що індексація починається з 0,
+# # \n тому символи виводяться з першого)
+print(sentence[0:25:2])
+#
+# #У шостому рядку виведіть усі символи з непарними індексами, тобто, починаючи з другого символу рядка.
+print(sentence[1:25:2])
+#
+# #виведіть усі символи у зворотному порядку
+print(sentence[::-1])
+#
+# #виведіть усі символи рядка через один у зворотному порядку, починаючи з останнього
+#
+print(sentence[::-2])
+# #
+# #виведіть довжину цього рядка
+#
+setence = 'Welcome to San Francisco!'
+print(len(sentence))
+
+#Приклади з різними функціями
+
+# #isalpha() - повертає True, якщо рядок складається лише з алфавітних символів
+# text = "hello woRLD"
+# print(text.isalpha())
+#
+# #islower() - повертає True, якщо рядок складається лише із символів у нижньому регістрі (маленькі букви)
+# print(text.islower())
+#
+# #isupper() - повертає True, якщо рядок складається лише із символів у верхньому регістрі (великі букви)
+# print(text.isupper())
+#
+# #isdigit() - повертає True, якщо всі символи рядка - цифри (тобто рядок цифр 1,2,3,4...).
+# print(text.isdigit())
+#
+# #isnumeric() - повертає True, якщо рядок є числом (напр. число 123), вона частіше використовується.
+# print(text.isnumeric())
+#
+# #startswith(str) - повертає True, якщо рядок починається з підрядка.
+# print(text.startswith("hello"))
+#
+# #endswith(str) - повертає True, якщо рядок закінчується на підрядок.
+# print(text.endswith("D"))
+#
+# #lower() - перекладає рядок у нижній регістр (весь рядок буде написано маленькими буквами)
+# print(text.lower())
+#
+# #upper() - перекладає рядок у верхній регістр (весь рядок буде написано великими буквами)
+# print(text.upper())
+#
+# #title() - початкові символи всіх слів у рядку перекладаються у верхній регістр (кожне слово буде написано з великої літери)
+# print(text.title())
+#
+# #capitalize() - перекладає у верхній регістр першу літеру тільки першого слова рядка.
+# print(text.capitalize())
+#
+# #приклад для вдосконалення фіо юзера, які він неправильно заповнив
+#
+# fio = input("Enter fio: ").title()
+# print(fio)
+
+
+
+#Task5
+#Реалізуйте наступну функціональність у тексті:
+
+#Змінити текст таким чином, щоб кожне речення починалися з великої літери;
+
+#Порахуйте скільки разів цифри зустрічаються у тексті;
+
+#Порахуйте скільки разів розділові знаки зустрічаються в тексті;
+
+#Порахуйте кількість знаків оклику в тексті.
