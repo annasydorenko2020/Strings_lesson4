@@ -542,7 +542,7 @@ print()
 #Порахуйте скільки разів розділові знаки зустрічаються в тексті;
 print()
 
-text = "Morning, Sam!!! Hof do you feel today?? I've seen you yesterday, you looked sick...."
+text = "Morning, Sam!!! How do you feel today?? I've seen you yesterday, you looked sick...."
 print(text)
 print(text.count("!"))
 print(text.count("?"))
@@ -577,6 +577,18 @@ spaces_count = 0
 #    spaces_count += 1
 #
 #    print()
+
+# for i in range(5):
+#    for j in range(spaces_count):
+#       print(" ", end=" ")
+#    for j in range(stars_count):
+#       print("*", end=" ")
+#
+#    stars_count -= 1
+#    spaces_count += 1
+#
+#    print()
+
 
 #Б
 
