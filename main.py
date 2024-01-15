@@ -268,55 +268,55 @@ import args
 
 
 #Task_1:
-message = "Mr.Tom takes bus123"
-print(message)
-alpha,message=0,"Mr.Tom takes bus123"
-for i in message:
-    if (i.isalpha()):
-        alpha+=1
-print("Number of digits", len(message)-alpha)
-print("Number of letters", alpha)
+# message = "Mr.Tom takes bus123"
+# print(message)
+# alpha,message=0,"Mr.Tom takes bus123"
+# for i in message:
+#     if (i.isalpha()):
+#         alpha+=1
+# print("Number of digits", len(message)-alpha)
+# print("Number of letters", alpha)
 #
 # ########
 #
-print()
-message = "highway666"
-print(message)
+# print()
+# message = "highway666"
+# print(message)
 
 # initialized value
-total_digits = 0
-total_letters = 0
+# total_digits = 0
+# total_letters = 0
 
 # iterate through all characters
-for s in message:
-
-        if s.isnumeric():
-                total_digits += 1
-
-        else:
-                total_letters += 1
-
-print("Total letters: ", total_letters)
-print("Total numbers: ", total_digits)
+# for s in message:
+#
+#         if s.isnumeric():
+#                 total_digits += 1
+#
+#         else:
+#                 total_letters += 1
+#
+# print("Total letters: ", total_letters)
+# print("Total numbers: ", total_digits)
 
 #################
 
 # #Task2
 #
-message = "My friend is fine, but fine is fine for him"
-print(message)
-
-result = message.count("fine")
-print(result)
+# message = "My friend is fine, but fine is fine for him"
+# print(message)
+#
+# result = message.count("fine")
+# print(result)
 #
 # ##
 #
-message = "Why I see 111, while you see 1122 instead"
-print(message)
-
-result = message.count("1")
-
-print(result)
+# message = "Why I see 111, while you see 1122 instead"
+# print(message)
+#
+# result = message.count("1")
+#
+# print(result)
 
 ####
 
@@ -324,49 +324,49 @@ print(result)
 #вивести з клавіатури рядок, слово для пошуку, слово для заміни.
 # Зробіть у рядку заміну одного слова на інше
 
-print()
-text = 'summer is hot, summer is sunny'
-result = text.replace('summer', 'winter')
-print(result)
-
-print()
+# print()
+# text = 'summer is hot, summer is sunny'
+# result = text.replace('summer', 'winter')
+# print(result)
+#
+# print()
 
 
 #Task4
 
-sentence = "Welcome to San Francisco!"
-print(sentence[:])
+# sentence = "Welcome to San Francisco!"
+# print(sentence[:])
 # # #виведіть третій символ цього рядка
 # # print(sentence[0:])
-print(sentence[2])
+# print(sentence[2])
 #
 # #виведіть передостанній символ цього рядка
-print(sentence[-2])
+# print(sentence[-2])
 # #
 # #виведіть перші п'ять символів цього рядка
-print(sentence[0:6])
+# print(sentence[0:6])
 # #
 # #виведіть весь рядок, крім двох останніх символів
-print(sentence[:-2])
+# print(sentence[:-2])
 #
 # #виведіть усі символи з парними індексами (вважаючи, що індексація починається з 0,
 # # \n тому символи виводяться з першого)
-print(sentence[0:25:2])
+# print(sentence[0:25:2])
 #
 # #У шостому рядку виведіть усі символи з непарними індексами, тобто, починаючи з другого символу рядка.
-print(sentence[1:25:2])
+# print(sentence[1:25:2])
 #
 # #виведіть усі символи у зворотному порядку
-print(sentence[::-1])
+# print(sentence[::-1])
 #
 # #виведіть усі символи рядка через один у зворотному порядку, починаючи з останнього
 #
-print(sentence[::-2])
+# print(sentence[::-2])
 # #
 # #виведіть довжину цього рядка
 #
-setence = 'Welcome to San Francisco!'
-print(len(sentence))
+# setence = 'Welcome to San Francisco!'
+# print(len(sentence))
 
 #Приклади з різними функціями
 
@@ -409,15 +409,258 @@ print(len(sentence))
 # fio = input("Enter fio: ").title()
 # print(fio)
 
+#lstip() - видаляє початкові пробіли з рядка (left strip)
+# text = "  hello woRLD  "
+# print(text)
+# print(text.lstrip())
+
+#rstip() - видаляє кінцеві пробіли з рядка (right strip)
+# text = "  hello woRLD  "
+# print(text)
+# print(text.rstrip())
+
+#stip() - видаляє початкові та кінцеві пробіли з рядка (її використовують найчастіше)
+# text = "  hello woRLD  "
+# print(text)
+# print(text.strip())
+
+#ljust(width) - якщо довжина рядка менша за параметр width, то праворуч від рядка додаються пробіли
+# щоб доповнити значення width, а сам рядок вирівнюється по лівому краю
+
+# text = "hello world"
+# print(text)
+# print(text.ljust(20))
+
+#rjust(width) - якщо довжина рядка менша за параметр width, то зліва від рядка додаються пробіли
+# щоб доповнити значення width, а сам рядок вирівнюється праворуч
+
+# text = "hello world"
+# print(text)
+# print(text.rjust(20))
+
+#center(width) - якщо довжина рядка менша за параметр width, то зліва і справа від рядка додаються пробіли
+# щоб доповнити значення width, а сам рядок вирівнюється по центру
+# text = "hello world"
+# print(text)
+# print(text.center(20))
+
+#find(str[, start[, end])   - функція, яка дозволяє знайти якесь значення, вона повертає індекс підрядка у рядку.
+# Якщо підрядок не знайдено, то повертає число -1.
+#find шукає зліва направо, rfind шукає справа наліво.
+# text = "hello world"
+# print(text.find("hello")) #0, бо він знайшов hello, починаючи з нульового індекса \ з самого початку
+# print(text.find("l"))   #2, він знайшов літеку, починаючи з другого індекса
+# print(text.rfind("l"))  #9, він знайшов літеку, починаючи з права на місці 9го індекса.
+
+#якщо ми хочемо задати конкрентний індекс, з якого починати пошук (а не шукати тільки справа, або зліва)
+# # то ми можемо використувати наступную функцію
+# first_found_index = text.find("l")  #(ми тут ставимо індекс першої літери l зліва)
+# print(text.find("l", first_found_index +1 ))
+#(почни шукати букву l, починаючи з індекса, він поверте індекс 3)
+
+# print(text.find("p")) #ми просимо знайти p у слові hello world, його не існує, тому отримуємл -1
+
+#приклади пошуку
+#v1. - треба знайти всі індекси, по яким у тексті зустрічаються літери l.
+#такий варіант рішення краще використовувати, коли треба працювати з індексами\порядковими номерами
+# for i in range(len(text)):
+#     if text[i] == "l":
+#         print(i)  #2, 3, 9 індекси виводить у консоль
+
+#v2.
+# index = 0
+#
+# for letter in text: #такий варіант краще для рішень, коли треба працювати зі значеннями у коллекціях,
+# а не з індексами \ порядковими номерами у коллекціях
+#     if letter == "l":
+#       print(index)
+#     index += 1 #результат буде такий самий 2, 3, 9 індекси виводить у консоль
+
+#replace(old, new[, num]) - замінює в рядку один підрядок на інший
+# text = "hello world hello"
+# print(text)
+
+#v1. - тут всі слова будуть замінені
+# text = text.replace("hello", "goodbye")
+# print(text)
+
+#v2. - тут буде замінено слово тільки один раз
+# text = text.replace("hello", "goodbye", 1)
+# print(text)
+
+#щоб порахувати кількість якогось символу у тексті
+# text = "qqqqqqq"
+# print(text.count("q"))
+
+
+
+
 
 
 #Task5
 #Реалізуйте наступну функціональність у тексті:
-
 #Змінити текст таким чином, щоб кожне речення починалися з великої літери;
+
+text = "ask him to come home. he should listen to you."
+#
+print()
+search_item = ". "
+current_index = text.find(search_item)
+print(current_index)
+#
+print()
+first_sentence = text[:current_index + len(search_item)]
+second_sentence = text[current_index + len(search_item):]
+
+#
+print()
+print(first_sentence)
+print(second_sentence)
+#
+print()
+final_sentence = first_sentence.capitalize() + second_sentence.capitalize()
+print(final_sentence)
+
 
 #Порахуйте скільки разів цифри зустрічаються у тексті;
 
+print()
+print()
+text = "my friend is sick for 11 or 13 days already"
+print(text)
+
+digit=0
+for i in text:
+   if i.isdigit():
+      digit=digit+1
+   else:
+      pass
+print("Total digits:", digit)
+
+print()
+
 #Порахуйте скільки разів розділові знаки зустрічаються в тексті;
+print()
+
+text = "Morning, Sam!!! Hof do you feel today?? I've seen you yesterday, you looked sick...."
+print(text)
+print(text.count("!"))
+print(text.count("?"))
+print(text.count("."))
+print(text.count(","))
+
 
 #Порахуйте кількість знаків оклику в тексті.
+print()
+text = "He should be here!!! He promised! This is not possible!!!!!!!!!"
+print(text)
+print(text.count("!"))
+
+print()
+print()
+
+#Tack6
+#намалювати фігури, заповнені зірочками
+
+stars_count = 5
+spaces_count = 0
+
+#A
+
+# for i in range(5):
+#    for j in range(spaces_count):
+#       print(" ", end=" ")
+#    for j in range(stars_count):
+#       print("*", end=" ")
+#
+#    stars_count -= 1
+#    spaces_count += 1
+#
+#    print()
+
+#Б
+
+# for i in range(5):
+#     for j in range(i+1):
+#         print("* ", end="")
+#     print()
+
+
+#В
+
+# for i in range(5):
+#    for j in range(spaces_count):
+#       print(" ", end=" ")
+#    for j in range(stars_count):
+#       print(" * ", end=" ")
+#
+#    stars_count -= 1
+#    spaces_count += 1
+#
+#    print()
+
+
+#Г - не розумію, як його зробити
+
+#Д
+# for i in range(11):
+#    for j in range(spaces_count):
+#       print("  ", end="")
+#    for j in range(stars_count):
+#       print("* ", end="")
+#    for j in range(spaces_count):
+#       print("  ", end="")
+#    if i >= 5:
+#       stars_count += 2
+#       spaces_count -= 1
+#    else:
+#       stars_count -= 2
+#       spaces_count -= 1
+#    print()
+
+#Е - не знаю, як його зробити
+
+#Ж
+# rows = 7
+# for i in range(0, 7):
+#    for j in range(0, i + 1):
+#       print("* ", end="")
+#    print("\r")
+# for i in range(7, 0, -1):
+#    for j in range(0, i + 1):
+#       print("* ", end="")
+#    print("\r")
+
+#З - не знаю, як його зробити
+
+
+#И
+
+# stars_count = 5
+# spaces_count = 0
+#
+# for i in range(5):
+#    for j in range(stars_count):
+#       print("* ", end=" ")
+#    for j in range(spaces_count):
+#       print(" ", end="")
+#
+#    stars_count -= 1
+#    spaces_count += 1
+#
+#    print()
+
+#К
+# for i in range(6):
+   # for j in range(spaces_count):
+   #    print(" ", end="   ")
+   # for j in range(stars_count):
+   #    print("* ", end="")
+   #
+   # spaces_count -= 1
+   # stars_count += 1
+   #
+   # print()
+
+
+
