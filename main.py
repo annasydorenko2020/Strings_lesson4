@@ -578,101 +578,90 @@ spaces_count = 0
 #
 #    print()
 
-# for i in range(5):
-#    for j in range(spaces_count):
-#       print(" ", end=" ")
-#    for j in range(stars_count):
-#       print("*", end=" ")
-#
-#    stars_count -= 1
-#    spaces_count += 1
-#
-#    print()
-
 
 #Б
 
-# for i in range(5):
-#     for j in range(i+1):
-#         print("* ", end="")
-#     print()
+for i in range(5):
+    for j in range(i+1):
+        print("* ", end="")
+    print()
 
 
 #В
 
-# for i in range(5):
-#    for j in range(spaces_count):
-#       print(" ", end=" ")
-#    for j in range(stars_count):
-#       print(" * ", end=" ")
-#
-#    stars_count -= 1
-#    spaces_count += 1
-#
-#    print()
+for i in range(5):
+   for j in range(spaces_count):
+      print(" ", end=" ")
+   for j in range(stars_count):
+      print(" * ", end=" ")
+
+   stars_count -= 1
+   spaces_count += 1
+
+   print()
 
 
 #Г - не розумію, як його зробити
 
 #Д
-# for i in range(11):
-#    for j in range(spaces_count):
-#       print("  ", end="")
-#    for j in range(stars_count):
-#       print("* ", end="")
-#    for j in range(spaces_count):
-#       print("  ", end="")
-#    if i >= 5:
-#       stars_count += 2
-#       spaces_count -= 1
-#    else:
-#       stars_count -= 2
-#       spaces_count -= 1
-#    print()
+for i in range(11):
+   for j in range(spaces_count):
+      print("  ", end="")
+   for j in range(stars_count):
+      print("* ", end="")
+   for j in range(spaces_count):
+      print("  ", end="")
+   if i >= 5:
+      stars_count += 2
+      spaces_count -= 1
+   else:
+      stars_count -= 2
+      spaces_count -= 1
+   print()
 
 #Е - не знаю, як його зробити
 
 #Ж
-# rows = 7
-# for i in range(0, 7):
-#    for j in range(0, i + 1):
-#       print("* ", end="")
-#    print("\r")
-# for i in range(7, 0, -1):
-#    for j in range(0, i + 1):
-#       print("* ", end="")
-#    print("\r")
+rows = 7
+for i in range(0, 7):
+   for j in range(0, i + 1):
+      print("* ", end="")
+   print("\r")
+for i in range(7, 0, -1):
+   for j in range(0, i + 1):
+      print("* ", end="")
+   print("\r")
 
 #З - не знаю, як його зробити
 
 
 #И
 
-# stars_count = 5
-# spaces_count = 0
-#
-# for i in range(5):
-#    for j in range(stars_count):
-#       print("* ", end=" ")
-#    for j in range(spaces_count):
-#       print(" ", end="")
-#
-#    stars_count -= 1
-#    spaces_count += 1
-#
-#    print()
+stars_count = 5
+spaces_count = 0
+
+for i in range(5):
+   for j in range(stars_count):
+      print("* ", end=" ")
+   for j in range(spaces_count):
+      print(" ", end="")
+
+   stars_count -= 1
+   spaces_count += 1
+
+   print()
 
 #К
-# for i in range(6):
-   # for j in range(spaces_count):
-   #    print(" ", end="   ")
-   # for j in range(stars_count):
-   #    print("* ", end="")
-   #
-   # spaces_count -= 1
-   # stars_count += 1
-   #
-   # print()
+for i in range(6):
+   for j in range(spaces_count):
+      print(" ", end="   ")
+   for j in range(stars_count):
+      print("* ", end="")
+   
+   spaces_count -= 1
+   stars_count += 1
+   
+   print()
 
 
 
